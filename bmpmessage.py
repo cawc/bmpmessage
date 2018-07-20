@@ -93,7 +93,7 @@ def readmessage(filename, key):
 
 def main():
 	parser = argparse.ArgumentParser()
-	parser.add_argument('mode', choices=['e','d','es'], help='(e)ncode\n(d)ecode\n(es)ecure (overwrites image)')
+	parser.add_argument('mode', choices=['e','d','es'], help='(e)ncode (d)ecode (es)ecure (overwrites image)')
 	parser.add_argument('filename', help='name of file/path to file')
 	parser.add_argument('mk', nargs='+', help='message to encode or key to decode, depending on mode option')
 	args = parser.parse_args()
